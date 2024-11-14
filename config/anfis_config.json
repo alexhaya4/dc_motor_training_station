@@ -1,0 +1,40 @@
+{
+    "anfis_structure": {
+        "input_vars": 2,
+        "membership_functions": 5,
+        "output_vars": 1,
+        "training_epochs": 100
+    },
+    "membership_functions": {
+        "error": {
+            "type": "trimf",
+            "ranges": [
+                [-100, -100, -50],
+                [-75, -25, 0],
+                [-25, 0, 25],
+                [0, 25, 75],
+                [50, 100, 100]
+            ],
+            "labels": ["NB", "NS", "ZE", "PS", "PB"]
+        },
+        "delta_error": {
+            "type": "trimf",
+            "ranges": [
+                [-10, -10, -5],
+                [-7.5, -2.5, 0],
+                [-2.5, 0, 2.5],
+                [0, 2.5, 7.5],
+                [5, 10, 10]
+            ],
+            "labels": ["NB", "NS", "ZE", "PS", "PB"]
+        }
+    },
+    "training_params": {
+        "learning_rate": 0.01,
+        "momentum": 0.9,
+        "error_goal": 0.001,
+        "initial_step_size": 0.01,
+        "step_size_decrease_rate": 0.9,
+        "step_size_increase_rate": 1.1
+    }
+}

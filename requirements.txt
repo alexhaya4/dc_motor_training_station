@@ -1,0 +1,18 @@
+﻿# GUI and plotting
+tk
+matplotlib
+Pillow
+
+# Scientific computing
+numpy
+scipy
+pandas
+
+# Hardware interface
+RPi.GPIO
+smbus2
+adafruit-ads1x15
+
+# Development tools
+pytest
+pylint

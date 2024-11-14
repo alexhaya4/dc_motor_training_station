@@ -1,0 +1,27 @@
+{
+    "motor": {
+        "pwm_frequency": 1000,
+        "max_speed_rpm": 1750,
+        "min_speed_rpm": 0,
+        "encoder_ppr": 20
+    },
+    "gpio_pins": {
+        "motor_pwm": 18,
+        "motor_in1": 23,
+        "motor_in2": 24,
+        "ir_sensor1": 17,
+        "ir_sensor2": 27,
+        "emergency_stop": 22,
+        "status_led": 25
+    },
+    "adc": {
+        "address": "0x48",
+        "current_channel": 0,
+        "voltage_channel": 1,
+        "gain": 1
+    },
+    "sampling": {
+        "rate_hz": 100,
+        "buffer_size": 1000
+    }
+}
